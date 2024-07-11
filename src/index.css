@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-carousel-container .custom-arrow {
+          position: absolute;
+          top: -50px;
+          /* Adjust the value as needed */
+          background: rgba(255, 255, 255, 0.7);
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          z-index: 1;
+
+
+}
+
+.custom-carousel-container .custom-arrow--left {
+          left: 12%;
+          font-size: 30px;
+          /* Adjust the value as needed */
+}
+
+.custom-carousel-container .custom-arrow--right {
+          right: 12%;
+          font-size: 30px;
+          /* Adjust the value as needed */
+}
+
+.carousel-container {
+          overflow: hidden;
+          height: 100%;
+          width: 100%;
+}
+
+.carousel-card {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 355.167px;
+          height: 35%;
+          overflow: hidden;
+          transition: transform 0.5s;
+}
+          
+.carousel-card>img {
+          width: 100%;
+          height: 100%;
+}
+
+.carousel-track {
+          display: flex;
+          position: absolute;
+          left: 0;
+          justify-content: center;
+          align-items: center;
+          width: 200%;
+          height: 100%;
+          transition: transform 0.5s ease-in-out;
+}
